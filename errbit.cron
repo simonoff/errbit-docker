@@ -1,0 +1,1 @@
+0  0  *  *  * app  cd /home/app/errbit; RAILS_ENV=production bundle exec errbit:db:clear_resolved
