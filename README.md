@@ -16,7 +16,7 @@ docker run \
   --link mongodb:mongodb
   -e "MONGO_URL=mongodb://mongodb/errbit"
   simonoff/errbit
-  sudo -u app -H bundle exec rake errbit:bootstrap
+  bundle exec rake errbit:bootstrap
 ```
 
 And then point your browser at ```http://localhost:3000```
