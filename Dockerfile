@@ -3,6 +3,8 @@ MAINTAINER Oleksandr Simonov <oleksandr@simonov.me>
 ENV HOME /root
 ENV SERVE_STATIC_ASSETS false
 ENV RAILS_ENV production
+RUN apt-get update
+RUN apt-get install sudo
 RUN sudo -u app -H git clone https://github.com/errbit/errbit.git /home/app/errbit
 WORKDIR /home/app/errbit
 RUN sudo -u app -H bundle install --deployment
